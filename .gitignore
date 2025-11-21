@@ -1,0 +1,46 @@
+# --- Ambientes virtuais ---
+venv/
+.venv/
+env/
+venv3.11/
+
+# --- Modelos e arquivos grandes ---
+models/
+pretrained_models/
+processed/
+temp/
+
+# --- Dados temporários / locais ---
+data/
+outputs/
+logs/
+cache/
+__pycache__/
+
+# --- Testes locais ---
+tests/
+
+# --- Configs e segredos ---
+.env
+.env.*
+config_local.json
+cookies.txt
+
+# --- Compilados Python ---
+*.pyc
+*.pyo
+*.pyd
+
+# --- Build / distribuição ---
+build/
+dist/
+*.egg-info/
+
+# --- IDEs e sistema ---
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# --- Outros ---
+*.log

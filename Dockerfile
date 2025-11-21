@@ -27,5 +27,5 @@ ENV PORT=8080
 # --workers 1: Cloud Run gerencia escalonamento horizontal
 # --threads 8: Permite múltiplas requisições simultâneas na mesma instância
 # --timeout 3600: 60 minutos (máximo do Cloud Run)
-CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 3600 api:create_app
+CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 3600 api:app
 

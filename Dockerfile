@@ -6,6 +6,9 @@ RUN apt-get update && apt-get install -y \
     git \
     build-essential \
     libsndfile1 \
+    curl \
+    && curl -fsSL https://deb.nodesource.com/setup_20.x | bash - \
+    && apt-get install -y nodejs \
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
@@ -25,6 +28,8 @@ COPY cookies.txt /app/cookies.txt
 
 # Expor porta (Cloud Run define PORT automaticamente via variável de ambiente)
 ENV PORT=8080
+ENV YTDLP_COOKIES_FILE=/app/cookies.txt
+ENV YT_DLP_JS_RUNTIME=/usr/bin/node
 
 # Executar API Flask com gunicorn
 # --workers 1: Cloud Run gerencia escalonamento horizontal

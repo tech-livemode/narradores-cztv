@@ -24,7 +24,6 @@ tests/
 .env
 .env.*
 config_local.json
-cookies.txt
 
 # --- Compilados Python ---
 *.pyc

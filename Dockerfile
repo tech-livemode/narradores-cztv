@@ -20,6 +20,9 @@ RUN pip install --no-cache-dir gunicorn
 # Copiar código da aplicação
 COPY . .
 
+# Copiar cookies.txt para uso do yt-dlp
+COPY cookies.txt /app/cookies.txt
+
 # Expor porta (Cloud Run define PORT automaticamente via variável de ambiente)
 ENV PORT=8080
 

@@ -1,7 +1,8 @@
 import os
 import duckdb # type: ignore
+from config import DATA_LAKE_DIR
 
-DATA_ROOT = os.getenv("DATA_LAKE_DIR", "data_lake")
+DATA_ROOT = str(DATA_LAKE_DIR)
 ANALYSES_DIR = os.path.join(DATA_ROOT, "analyses", "year=*", "month=*", "stream=*", "*.parquet")
 DUCKDB_PATH = os.path.join(DATA_ROOT, "duckdb", "warehouse.duckdb")
 os.makedirs(os.path.dirname(DUCKDB_PATH), exist_ok=True)

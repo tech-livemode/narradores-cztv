@@ -150,5 +150,5 @@ tzdata==2025.2
 uritemplate==4.2.0
 urllib3==2.5.0
 yarl==1.22.0
-yt-dlp @ https://github.com/yt-dlp/yt-dlp/archive/refs/heads/master.zip#sha256=7455f609728958b7e6801c179da18bdb25c688b52a3170e7d2aa6b5aef292003
+yt-dlp @ https://github.com/yt-dlp/yt-dlp/archive/refs/heads/master.zip
 zipp==3.23.0
